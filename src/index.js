@@ -157,7 +157,7 @@ let saveTodo = function (el) {
 
 let switchOff = function (el) {
     let a = searchNode(el, 'taskitem');
-    a.removeAttribute('status');
+    a.setAttribute('status', 'open');
     el.remove();
     store();
 }
